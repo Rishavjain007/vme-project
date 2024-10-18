@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <style>
+      .container{
+            width: 61%;
+        }
+      span{
+            font-size: 20px !important;
+            font-weight: bold;
+        }
+        ul li{
+            list-style: none !important;
+        }
+        @media only screen and (max-width: 768px) {
+            .container{
+                width: 100% !important;
+            }
+        }
+        .line{
+            border-bottom: 1px solid #ff7a00;
+        }
+        img{
+            max-width: 100% !important;
+            height: auto !important;
+        }
+        a{
+          color: white;
+          text-decoration: none;
+        }
+    </style>
+    </head>
+  <body>
+    <!-- my navbar -->
+    <nav class="navbar navbar-expand-lg nv">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" style="width: 160px;"><img src="logo-for-site.png" alt="" width="63%"></a>
+        <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="">
+            <img src="menu (1).png" alt="" style="width: 100%;">
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html">About US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Elements
+              </a>
+              <ul class="dropdown-menu p-0">
+                <a class="dropdown-item" href="Hollow-core-slabs.html" id="none"><li>Hollow core slabs</li></a>
+                <a class="dropdown-item" href="Columns.html" id="none"><li>Columns</li></a>
+                <a class="dropdown-item" href="Beams.html" id="none"><li>Beams (RCC/PT)</li></a>
+                <a class="dropdown-item" href="Wall-Panels.html" id="none"><li>Wall Panels</li></a>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Building Solutions
+              </a>
+              <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="Commercial-Project.html" id="none"><li>Commercial Project</li></a>
+               <li class="dropdown-item dropdown-submenu p-0">
+                      <a class="dropdown-item dropdown-toggle" href="#" id="none">Modular Solutions</a>
+                      <ul class="dropdown-menu p-0">
+                          <li><a class="dropdown-item" href="Cabins.html" id="none">Cabins</a></li>
+                          <li><a class="dropdown-item" href="Toilets.html" id="none">Toilets</a></li>
+                          <li><a class="dropdown-item" href="Utility-Module.html" id="none">Utility Module</a></li>
+                          <li><a class="dropdown-item" href="Lift-Core.html" id="none">Lift Core</a></li>
+                          <li><a class="dropdown-item" href="Stair-Case.html" id="none">Stair Case</a></li>
+                      </ul>
+                  </li>
+                  <a class="dropdown-item" href="Residential.html" id="none"><li>Residential</li></a>
+              </ul>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Precast Products
+              </a>
+              <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                <li class="dropdown-item dropdown-submenu p-0">
+                  <a class="dropdown-item dropdown-toggle" id="none" href="storage-tank1.html">Storage Tanks</a>
+                  <ul class="dropdown-menu p-0">
+                      <li><a class="dropdown-item" href="Overview.html" id="none">Overview</a></li>
+                      <li><a class="dropdown-item" href="Material-Specification.html" id="none">Material Specification</a></li>
+                      <li><a class="dropdown-item" href="Tank-design-parameter.html" id="none">Design Parameters</a></li>
+                      <li><a class="dropdown-item" href="small-domestic.html" id="none">Small Domestic Tanks</a></li>
+                      <li><a class="dropdown-item" href="water-tanks-in-india.html" id="none">Monolithic tanks</a></li>
+                      <li><a class="dropdown-item" href="custom-water-tank.html" id="none">Custom Factory Assembled Tanks</a></li>
+                      <li><a class="dropdown-item" href="Custom-On-Site-Assembly-Tanks.html" id="none">Custom On Site Assembly Tanks</a></li>
+                      <li><a class="dropdown-item" href="Special-Purpose-Tanks.html" id="none">Special Purpose Tanks</a></li>
+                      <li><a class="dropdown-item" href="tank-summarized.html" id="none">Summarized Applications</a></li>
+                      <li><a class="dropdown-item" href="Tank-Installation.html" id="none">Installation Procedure</a></li>
+                      <li><a class="dropdown-item" href="Tank-Dos-Don't.html" id="none">Dos and Don’ts</a></li>
+                      <li><a class="dropdown-item" href="Tank-FAQ.html" id="none">FAQ</a></li>
+                  </ul>
+                </li>                   
+                <li class="dropdown-item dropdown-submenu p-0">
+                  <a class="dropdown-item dropdown-toggle lh-base" id="none" href="#">Strom Water Drains <br>& Sewer Systems</a>
+                  <ul class="dropdown-menu p-0">
+                      <li><a class="dropdown-item" id="none" href="U-Drain.html">U Drain</a></li>
+                      <li><a class="dropdown-item" id="none" href="Manhole-Chamber.html">Manhole Chamber</a></li>
+                  </ul>
+                </li>                   
+               <li class="dropdown-item dropdown-submenu p-0">
+                      <a class="dropdown-item dropdown-toggle" id="none" href="#">Telecom Electrical Sectors</a>
+                      <ul class="dropdown-menu p-0">
+                          <li><a class="dropdown-item" href="Cable-Trenches.html" id="none">Cable Trenches</a></li>
+                          <li><a class="dropdown-item" href="Telecommunications-Chambers.html" id="none">Telecommunications Chambers</a></li>
+                      </ul>
+                  </li>
+               <li class="dropdown-item dropdown-submenu p-0">
+                      <a class="dropdown-item dropdown-toggle" id="none" href="#">Boundary Wall <br> & Soil Retaining Wall</a>
+                      <ul class="dropdown-menu p-0">
+                          <li><a class="dropdown-item" href="Compound.html" id="none">Compound Wall & Retaining Wall</a></li>
+                          <li><a class="dropdown-item" href="Retaining.html" id="none">Retaining Wall Using Hollow <br> Core Slabs</a></li>
+                      </ul>
+                  </li>
+               <li class="dropdown-item dropdown-submenu p-0">
+                      <a class="dropdown-item dropdown-toggle" id="none" href="#">Architectural Products</a>
+                      <ul class="dropdown-menu p-0">
+                          <li><a class="dropdown-item" href="Precast-Concrete-Tiles.html" id="none">Precast Concrete Tiles</a></li>
+                          <li><a class="dropdown-item" href="concete-facades.html" id="none">Concrete Facades</a></li>
+                          <li><a class="dropdown-item" href="concrete-planters.html" id="none">Planters</a></li>
+                      </ul>
+                  </li>
+               <li class="dropdown-item dropdown-submenu p-0">
+                      <a class="dropdown-item dropdown-toggle" id="none" href="Foundation.html">Foundation</a>
+                      <ul class="dropdown-menu p-0">
+                          <li><a class="dropdown-item" href="Foundation.html" id="none">Footing</a></li>
+                          <li><a class="dropdown-item" href="Foundation.html" id="none">Pedestals</a></li>
+                          <li><a class="dropdown-item" href="Foundation.html" id="none">Tie Beams</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="downloads.html">Downloads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="careers.html">Careers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          </div>
+      </div>
+    </nav>
+  <!-- /my navbar -->
+
+
+    <!-- Home -->
+     <div class="containerr">
+            <video autoplay loop muted plays-inline class="bg-clip">
+              <source src="Precast Technology .mp4" type="video/mp4">
+            </video>
+            <div class="content">
+              <div class="container" id="ccontaineer">
+                <div class="row" style="margin-bottom: -200px;">
+                    <div class="col-lg-8">
+                        <div class="head-bg">
+                          <div class="card ccard">
+                            <div class="card-body">
+                              <h1 class="text">INDIAS FIRST FULLY <br> AUTOMATED <br> PRECAST FACTORY.</h1>
+                              <div>
+                                <div class="row" style="width: 80%;">
+                                  <div class="col-lg-6 col-md-6 col-sm-12 p
+                                  -0 pt-3 SEE">
+                                    <a href="Commercial-Project.html"><button class="btn btn btn button aaz">SEE ALL PROJECTS <i class="fa-solid fa-arrow-right-long"></i> </button></a>
+                                  </div>
+                                  <div class="col-lg-6 col-md-6 col-sm-12 p
+                                  -0 pt-3 ps-3 a">
+                              <a href="about.html"><button class="btn btn btn button aaz">ABOUT US<i class="fa-solid fa-arrow-right-long"></i></button></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                           </div>                        
+                          </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <!-- Home -->
+
+
+      <!-- ABOUT US -->
+       <div class="About">
+        <div class="padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 video">
+                  <section>
+                  <iframe width="100%" height="315px" src="https://www.youtube.com/embed/fVXhcoTC7WI?si=InLhdPmiOM_JC750&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+                <h2 class="ps-3 py-3 boorderr">VME Precast uses cutting-edge technology to create precast concrete precisely cast in a controlled environment and properly cured. The VME Precast plant meets international production standards and safety norms.</h2>
+
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                  <p class="color">About Us</p>
+                  <p class="fs-1 fw-semibold">ABOUT VME PRECAST</p>
+                  <div class="roundedd"></div>
+                  <div class="About-height">
+                    <p class="my-4">VME Precast is a diversified unit of the VME Group which is primarily involved in planning, execution and transfer of specialised projects in the field of construction like road overbridges, railway bridges and such other structures, besides highway enhancement.</p>
+                  </div>
+                  <div class="About-height">
+                    <p class="my-4">VME Precast has set up India’s first state-of-the-art precast plant in Oragadam, one of the fastest growing industrial centres. Backed by Finnish expertise, VME Precast’s in-house structural designing team takes up turn-key projects right from the structural design stage right up to the erection of precast elements.</p>
+                    <div class="">
+                      <button class="btn bnt About-btn rounded-pill">see more<i class="fa-solid fa-circle-play ps-2"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <!-- /ABOUT US -->
+
+
+      <!-- Services -->
+       <div class="padding">
+        <div class="text-center">
+          <p class="fs-3">Services</p>
+        <div class="abb" style="display: flex; justify-content: center; align-items: center; "> 
+            <i class="fa-solid fa-circle" style="font-size: 5px !important; color: #ff7a00;"></i>
+            <i class="fa-solid fa-circle mx-1" style="font-size: 5px !important; color: #ff7a00;"></i>
+            <i class="fa-solid fa-circle" style="font-size: 5px !important; color: #ff7a00;"></i>
+            <div class=" mx-1 rounded" style="background-color:#ff7a00; width: 50px; height: 4px;"></div>
+        </div>
+        <div class="text-center">
+          <p class="p-color pt-3">Modernize your rounded icon box with rounded border style. This is one of the best icon style for your WordPress site.</p>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 sm-12 mt-5">
+                <div class="aaz">
+                    <i class="fas fa-trophy as" style="padding: 18px 17px;"></i>
+                    <h5>Precast Elements</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 sm-12 mt-5">
+                <div class="aaz">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                    <h5>Building Solutions</h5>
+                   </div>
+            </div>
+            <div class="col-lg-4 col-md-4 sm-12 mt-5">
+                <div class="aaz">
+                    <i class="fas fa-handshake as" style="padding: 16px 12px;"></i>
+                    <h5>Precast Production</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+       </div>
+       <!-- /Services -->
+
+
+       <!-- Benefits -->
+        <div class="">
+          <div class="">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="text-center">
+                    <h2>Benefits & Advantages</h2>
+                    <div class="abb" style="display: flex; justify-content: center; align-items: center; "> 
+                      <i class="fa-solid fa-circle" style="font-size: 5px !important; color: #ff7a00;"></i>
+                      <i class="fa-solid fa-circle mx-1" style="font-size: 5px !important; color: #ff7a00;"></i>
+                      <i class="fa-solid fa-circle" style="font-size: 5px !important; color: #ff7a00;"></i>
+                      <div class=" mx-1 rounded" style="background-color:#ff7a00; width: 50px; height: 4px;"></div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+                <div class="py-5">
+                  <div class="container">
+                    <div class="row d-flex justify-content-between">
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">SPACE SAVER DESIGN</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="col-lg-1"></div> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="pb-5">
+                  <div class="container">
+                    <div class="row d-flex justify-content-between">
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">SPACE SAVER DESIGN</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <div class="aaaz">
+                              <?xml version="1.0" encoding="utf-8"?>
+                              <svg width="80px" height="80px" class="as" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.63495 14.4151L5.67396 12.2121C5.80734 11.9293 6.19266 11.9293 6.32604 12.2121L7.36505 14.4151L9.68859 14.7706C9.98671 14.8162 10.1055 15.1997 9.8897 15.4198L8.2087 17.1334L8.60542 19.5543C8.65637 19.8652 8.34456 20.1022 8.07781 19.9554L6 18.8118L3.92219 19.9554C3.65544 20.1022 3.34363 19.8652 3.39458 19.5543L3.7913 17.1334L2.1103 15.4198C1.89447 15.1997 2.01329 14.8162 2.31141 14.7706L4.63495 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M16.6349 14.4151L17.674 12.2121C17.8073 11.9293 18.1927 11.9293 18.326 12.2121L19.3651 14.4151L21.6886 14.7706C21.9867 14.8162 22.1055 15.1997 21.8897 15.4198L20.2087 17.1334L20.6054 19.5543C20.6564 19.8652 20.3446 20.1022 20.0778 19.9554L18 18.8118L15.9222 19.9554C15.6554 20.1022 15.3436 19.8652 15.3946 19.5543L15.7913 17.1334L14.1103 15.4198C13.8945 15.1997 14.0133 14.8162 14.3114 14.7706L16.6349 14.4151Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M10.6349 5.41515L11.674 3.21211C11.8073 2.9293 12.1927 2.9293 12.326 3.21211L13.3651 5.41515L15.6886 5.7706C15.9867 5.8162 16.1055 6.19974 15.8897 6.41976L14.2087 8.13337L14.6054 10.5543C14.6564 10.8652 14.3446 11.1022 14.0778 10.9554L12 9.81178L9.92219 10.9554C9.65544 11.1022 9.34363 10.8652 9.39458 10.5543L9.7913 8.13337L8.1103 6.41976C7.89447 6.19974 8.01329 5.8162 8.31141 5.7706L10.6349 5.41515Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <h3 class="aaaz-h3">Building Solutions</h3>
+                               </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <div class="col-lg-1"></div> -->
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+       <!-- /Benefits -->
+
+
+      <!-- NEW PRODUCT -->
+      
+      <!-- <div class="">
+        <div class="" style="background-image: linear-gradient(180deg, #091441 0%, #2e396f 100%);">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-flex">
+                  <img src="vme-toilets.jpeg" alt="" width="50%">
+                <img src="vme-precast-toilets.jpeg" alt="" width="50%">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h4 style="color: #aeaeae;">NEW PRODUCT</h4>
+                <h2>READY MADE PRECAST TOILETS</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- /NEW PRODUCT -->
+
+
+      <!-- DOWNLOAD BROCHURE -->
+       <div class="DOWNLOAD-BROCHURE py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-12">
+              <h4 class="" style="color: #AEAEAE !important;">
+                <span>DOWNLOAD BROCHURE</span>
+              </h4>
+              <div>
+                <h2 class="BROCHURE-heading">
+                  ALL PRODUCTS BROCHURE AVAILABLE !
+                </h2>
+              </div>
+              <button class="btn btn-info py-3">
+                DOWNLOAD NOW
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12"></div>
+          </div>
+        </div>
+       </div>
+      <!-- /DOWNLOAD BROCHURE -->
+
+
+      <!-- relationships -->
+       
+      <div class="py-5 relationships-bg">
+        <div class="py-5">
+          <div class="container pb-5">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h4><span style="color: #ff7a00;"> Global Relationships</span></h4>
+                <h2 style="font-size: 54px !important;">VME CLIENTS</h2>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="ndr.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="ndr.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="ndr.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <div class="card">
+                  <div class="card-body text-center">
+                    <img src="ndr.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- relationships -->
+      
+      
+      <!-- footer -->
+       <div class="py-5" style="background-image: linear-gradient(180deg, #091441 0%, #2e396f 100%);">
+        <div class="">
+          <div class="">
+            <div class="container py-5" style="width: 61%;">
+              <div class="row g-5">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <div class="">
+                    <img src="https://vmeprecast.co.in/wp-content/uploads/2022/10/VME-Precast-Product-Logo-300x180.jpg" alt="" width="80%">
+                  </div>
+                  <div class="py-3">
+                    <ul class="p-0 text-white">
+                      <li>INDIAS FIRST FULLY <br> AUTOMATED PRECAST <br> FACTORY</li>
+                      <li>
+                        <div class="py-3">
+                          <div class="d-flex justify-content-around">
+                            <div class="d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; background-color: #fff; border-radius: 50px;">
+                              <i class="fa-brands fa-facebook-f text-dark fs-4"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; background-color: #fff; border-radius: 50px;">
+                              <i class="fa-brands fa-instagram text-dark fs-4"></i>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center" style="width: 50px; height: 50px; background-color: #fff; border-radius: 50px;">
+                              <i class="fa-brands fa-youtube text-dark fs-4"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <div class="">
+                    <h2 class="text-white fw-bolder">Quick Link</h2>
+                  <ul class="p-0 text-white">
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">About Us</span></li></a>
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Elements</span></li></a>
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Building Solutions</span></li></a>
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Precast Products</span></li></a>
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Careers</span></li></a>
+                  </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <div class="">
+                    <h2 class="text-white fw-bolder">Projects</h2>
+                  <ul class="p-0 text-white">
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Commercial Project</span></li></a>
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Industial Buildings</span></li></a>
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Modular Solution</span></li></a>
+                    <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Residential</span></li></a>
+                  </ul>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <div class="">
+                    <h2 class="text-white fw-bolder">Get In Touch</h2>
+                    <ul class="p-0 text-white">
+                      <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-location-dot fs-5" style="color: #ff7a00;"></i>
+                      <li class="ps-3">124, Eraiyur Road, Vallam (A) Village, Sriperumbudur, Kanchipuram - 602105</li>
+                    </div>
+                      <div class="d-flex align-items-center py-3">
+                      <i class="fa-solid fa-envelope fs-5" style="color: #ff7a00;"></i>
+                      <li class="ps-3">marketing@vmeprecast.co.in</li>
+                    </div>
+                      <div class="d-flex align-items-center">
+                      <i class="fa-solid fa-phone fs-5" style="color: #ff7a00;"></i>
+                      <li class="ps-3">+91 91769 13191</li>
+                    </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <i style="color: #fff; font-size: larger;">&#169;</i>
+              <span class="text-white">Copyright 2020 powered by VME</span>
+            </div>
+          </div>
+        </div>
+       </div>
+      <!-- /footer -->
+
+
+    </body>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+     </html>
