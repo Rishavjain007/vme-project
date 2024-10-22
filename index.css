@@ -301,21 +301,6 @@ a{
     transition: 1s;
     fill: white;
 }
-.row:hover #a{
-    background-color:  rgb(2, 2, 98);
-    color: white;
-}
-
-#a{
-    font-size: x-large;
-    padding: 11px;
-    color: rgb(2, 2, 98);
-}
-
-#a:hover{
-    background-color:  rgb(2, 2, 98);
-    color: white;
-}
 #h1{
     transition-duration: 1s;
 }
@@ -332,11 +317,6 @@ transition-duration: 1s;
     background-color: #0F3A5A;
     transition-duration: 1s;
 }
-::selection{
-    color:green;
-    background-color: black;
-}
-
 /* .card:hover{ 
     border: 2px solid orange;
 } */
