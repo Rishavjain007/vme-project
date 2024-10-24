@@ -39,7 +39,14 @@ ul li{
 }
 /* .dropdown a{
     color: #000 !important;
-  } */
+} */
+.dropdown-submenu > .dropdown-menu {
+  top: 5px !important;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  display: none;
+}
 #none:hover{
     background-color: #ff7a00 !important;
 }
@@ -158,6 +165,60 @@ ul li{
     padding: 5px !important;
   }
 }
+
+
+
+
+/* From Uiverse.io by Deri-Kurniawan */ 
+.buttoon {
+  position: relative;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff5e14;
+  background-color: #fff;
+  border: 1px solid #ff5e14;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  /* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1); */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  cursor: pointer;
+}
+
+.buttoon:hover {
+  transform: scale(1.05);
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttoon:active {
+  transform: scale(0.9);
+}
+
+.buttoon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ff5e14,#ff7a00,#ffa600);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+  border-radius: 50px;
+}
+
+.buttoon:hover::before {
+  right: 0;
+}
+
+
+
+
+
 /* /home */
 
 
@@ -194,11 +255,213 @@ ul li{
 .p-color{
     color: #565969;    
 }
-.About-btn{
+/* .About-btn{
     background-color: #ff5e14 !important;
     color: #fff !important;
 }
-.About{
+.About-btn:hover{
+    background-color: #fff !important;
+    color: #ff5e14 !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 1px solid #ff5e14 !important;
+} */
+
+
+
+ /* From Uiverse.io by alexroumi */ 
+ /* .button {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: #212121 !important;
+  z-index: 1;
+  background: #e8e8e8 !important;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: all 250ms;
+  overflow: hidden;
+ } */
+/*  
+ .button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: #ff5e14;
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+  transition: all 250ms;
+ margin-left: -20px;
+ } */
+ 
+/* .button:hover {
+  color: #e8e8e8;
+ }
+ 
+.button:hover::before {
+  width: 100%;
+ } */
+
+
+
+/* From Uiverse.io by MuhammadHasann */ 
+.buutton {
+  position: relative !important;
+  padding: 12px 35px !important;
+  background: #ff5e14 !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  color: #fff !important;
+  border: 3px solid #ff5e14 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 0 0 #fec1958c !important;
+  transition: all 0.3s ease-in-out !important;
+  cursor: pointer !important;
+}
+
+.star-1 {
+  position: absolute !important;
+  top: 20% !important;
+  left: 20% !important;
+  width: 25px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 0 #ff5e14) !important;
+  z-index: -5 !important;
+  transition: all 1s cubic-bezier(0.05, 0.83, 0.43, 0.96) !important;
+}
+
+.star-2 {
+  position: absolute !important;
+  top: 45% !important;
+  left: 45% !important;
+  width: 15px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 0 #ff5e14) !important;
+  z-index: -5 !important;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01) !important;
+}
+
+.star-3 {
+  position: absolute !important;
+  top: 40% !important;
+  left: 40% !important;
+  width: 5px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 0 #ff5e14) !important;
+  z-index: -5 !important;
+  transition: all 1s cubic-bezier(0, 0.4, 0, 1.01) !important;
+}
+
+.star-4 {
+  position: absolute !important;
+  top: 20% !important;
+  left: 40% !important;
+  width: 8px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 0 #ff5e14) !important;
+  z-index: -5 !important;
+  transition: all 0.8s cubic-bezier(0, 0.4, 0, 1.01) !important;
+}
+
+.star-5 {
+  position: absolute !important;
+  top: 25% !important;
+  left: 45% !important;
+  width: 15px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 0 #ff5e14) !important;
+  z-index: -5 !important;
+  transition: all 0.6s cubic-bezier(0, 0.4, 0, 1.01) !important;
+}
+
+.star-6 {
+  position: absolute !important;
+  top: 5% !important;
+  left: 50% !important;
+  width: 5px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 0 #ff5e14) !important;
+  z-index: -5 !important;
+  transition: all 0.8s ease !important;
+}
+
+.buutton:hover {
+  background: transparent !important;
+  color: #ff5e14 !important;
+  box-shadow: 0 0 25px #ff5e14 !important;
+}
+
+.buutton:hover .star-1 {
+  position: absolute !important;
+  top: -80% !important;
+  left: -30% !important;
+  width: 25px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 10px #ff5e14) !important;
+  z-index: 2 !important;
+}
+
+.buutton:hover .star-2 {
+  position: absolute !important;
+  top: -25% !important;
+  left: 10% !important;
+  width: 15px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 10px #ff5e14) !important;
+  z-index: 2 !important;
+}
+
+.buutton:hover .star-3 {
+  position: absolute !important;
+  top: 55% !important;
+  left: 25% !important;
+  width: 5px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 10px #ff5e14) !important;
+  z-index: 2 !important;
+}
+
+.buutton:hover .star-4 {
+  position: absolute !important;
+  top: 30% !important;
+  left: 80% !important;
+  width: 8px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 10px #ff5e14) !important;
+  z-index: 2 !important;
+}
+
+.buutton:hover .star-5 {
+  position: absolute !important;
+  top: 25% !important;
+  left: 115% !important;
+  width: 15px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 10px #ff5e14) !important;
+  z-index: 2 !important;
+}
+
+.buutton:hover .star-6 {
+  position: absolute !important;
+  top: 5% !important;
+  left: 60% !important;
+  width: 5px !important;
+  height: auto !important;
+  filter: drop-shadow(0 0 10px #ff5e14) !important;
+  z-index: 2 !important;
+}
+
+.fil0 {
+  fill: #ff5e14 !important;
+}
+ .About{
     background-color: #f5f7fa;
 }
 /* /about */
