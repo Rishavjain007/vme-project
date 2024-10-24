@@ -14,6 +14,9 @@ p{
 a{
     color: #000 !important;
 }
+ul li{
+  list-style: none !important;
+}
 .fa-regular{
     padding-right: 7px;
 }
@@ -429,8 +432,8 @@ transition-duration: 1s;
     transition-duration: 1s;
 }
 ::selection{
-    color:green;
-    background-color: black;
+    color: white;
+    background-color: #ffa600;
 }
 /* .card:hover{ 
     border: 2px solid orange;
