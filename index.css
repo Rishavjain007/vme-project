@@ -20,6 +20,29 @@ ul li{
 .fa-regular{
     padding-right: 7px;
 }
+span{
+  font-size: 20px !important;
+  font-weight: bold;
+}
+ul li{
+  list-style: none !important;
+}
+@media only screen and (max-width: 768px) {
+  .container{
+      width: 100% !important;
+  }
+}
+.line{
+  border-bottom: 1px solid #ff7a00;
+}
+img{
+  max-width: 100% !important;
+  height: auto !important;
+}
+a{
+color: white;
+text-decoration: none;
+}
 /* divider */
 .abb h1{
     color: #ff7a00 !important;
@@ -156,7 +179,8 @@ ul li{
 }
 .ccard{
   padding: 25px !important;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;}
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 @media screen and (max-width: 425px) {
   .text {
     font-size: 39px !important;
@@ -172,7 +196,7 @@ ul li{
 /* From Uiverse.io by Deri-Kurniawan */ 
 .buttoon {
   position: relative;
-  padding: 12px 20px;
+  padding: 12px 10px;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;

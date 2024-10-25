@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank Dos And Don't</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"/>
+    <style>
+        .container{
+            width: 61%;
+        }
+        @media only screen and (max-width: 768px) {
+            .container{
+                width: 100% !important;
+            }
+        }
+        .carousel-control-prev-icon{
+            margin-left: -250px !important;
+            background-image: url(...);
+        }
+        .carousel-control-next-icon{
+            margin-right: -250px !important;
+            background-image: url(...);
+        }
+        @media only screen and (max-width:890px) {
+            .carousel-control-prev-icon{
+                margin-left: -60px !important;
+            }
+            .carousel-control-prev-icon .fa-solid{
+                font-size: 13px !important;
+            }
+            .carousel-control-next-icon{
+                margin-right: -60px !important;
+            }
+            .carousel-control-next-icon .fa-solid{
+                font-size: 13px !important;
+            }
+        }
+        .owl-dots{
+            display: none;
+        }
+        .heading{
+            color: #0f3a5a !important;
+            font-family: "Figtree", Sans-serif !important;
+            font-size: 31px !important;
+            font-weight: 600 !important;
+            -webkit-text-stroke-width: 1px !important;
+            stroke-width: 1px !important;
+            -webkit-text-stroke-color: #000 !important;
+            stroke: #000 !important;
+            text-shadow: 0px 0px 0px rgba(0, 0, 0, .3) !important;
+        }
+        span{
+            font-size: 20px !important;
+            font-weight: bold;
+        }
+        .img{
+                width: 80% !important;
+                display: flex;
+                justify-content: center !important;
+        }
+        @media only screen and (max-width: 768px) {
+            .img{
+                width: 100% !important;
+            }
+        }
+        /* h5{
+            font-size: 20px !important;
+        } */
+        .fa-regular{
+            color: #ff5e14;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- my navbar -->
+    <nav class="navbar navbar-expand-lg nv" style="margin-top: -130px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="width: 160px;"><img src="logo-for-site.png" alt="" width="63%"></a>
+          <button class="navbar-toggler menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="">
+              <img src="menu (1).png" alt="" style="width: 100%;">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Elements
+                </a>
+                <ul class="dropdown-menu p-0">
+                  <a class="dropdown-item" href="Hollow-core-slabs.html" id="none"><li>Hollow core slabs</li></a>
+                  <a class="dropdown-item" href="Columns.html" id="none"><li>Columns</li></a>
+                  <a class="dropdown-item" href="Beams.html" id="none"><li>Beams (RCC/PT)</li></a>
+                  <a class="dropdown-item" href="Wall-Panels.html" id="none"><li>Wall Panels</li></a>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav-hilight" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Building Solutions
+                </a>
+                <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item dropdown-submenu p-0">
+                    <a class="dropdown-item dropdown-toggle" href="Commercial-Project.html" id="none">Commercial Project</a>
+                    <ul class="dropdown-menu p-0">
+                        <li><a class="dropdown-item" href="it-parks-office.html" id="none">IT Parks/Office</a></li>
+                        <li><a class="dropdown-item" href="Showrooms.html" id="none">Showrooms</a></li>
+                        <li><a class="dropdown-item" href="Hotels.html" id="none">Hotels</a></li>
+                        <li><a class="dropdown-item" href="Factories.html" id="none">Factories</a></li>
+                        <li><a class="dropdown-item" href="Sports-Arena.html" id="none">Sports Arena</a></li>
+                    </ul>
+                </li>
+                <a class="dropdown-item" href="industrial-buildings.html" id="none"><li>Industrial Buildings</li></a>
+                 <li class="dropdown-item dropdown-submenu p-0">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="none">Modular Solutions</a>
+                        <ul class="dropdown-menu p-0">
+                            <li><a class="dropdown-item" href="Cabins.html" id="none">Cabins</a></li>
+                            <li><a class="dropdown-item" href="Toilets.html" id="none">Toilets</a></li>
+                            <li><a class="dropdown-item" href="Utility-Module.html" id="none">Utility Module</a></li>
+                            <li><a class="dropdown-item" href="Lift-Core.html" id="none">Lift Core</a></li>
+                            <li><a class="dropdown-item" href="Stair-Case.html" id="none">Stair Case</a></li>
+                        </ul>
+                    </li>
+                    <a class="dropdown-item" href="Residential.html" id="none"><li>Residential</li></a>
+                </ul>
+            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Precast Products
+                </a>
+                <ul class="dropdown-menu p-0" aria-labelledby="navbarDropdown">
+                  <li class="dropdown-item dropdown-submenu p-0">
+                    <a class="dropdown-item dropdown-toggle" id="none" href="storage-tank1.html">Storage Tanks</a>
+                    <ul class="dropdown-menu p-0">
+                        <li><a class="dropdown-item" href="Overview.html" id="none">Overview</a></li>
+                        <li><a class="dropdown-item" href="Material-Specification.html" id="none">Material Specification</a></li>
+                        <li><a class="dropdown-item" href="Tank-design-parameter.html" id="none">Design Parameters</a></li>
+                        <li><a class="dropdown-item" href="small-domestic.html" id="none">Small Domestic Tanks</a></li>
+                        <li><a class="dropdown-item" href="water-tanks-in-india.html" id="none">Monolithic tanks</a></li>
+                        <li><a class="dropdown-item" href="custom-water-tank.html" id="none">Custom Factory Assembled Tanks</a></li>
+                        <li><a class="dropdown-item" href="Custom-On-Site-Assembly-Tanks.html" id="none">Custom On Site Assembly Tanks</a></li>
+                        <li><a class="dropdown-item" href="Special-Purpose-Tanks.html" id="none">Special Purpose Tanks</a></li>
+                        <li><a class="dropdown-item" href="tank-summarized.html" id="none">Summarized Applications</a></li>
+                        <li><a class="dropdown-item" href="Tank-Installation.html" id="none">Installation Procedure</a></li>
+                        <li><a class="dropdown-item" href="Tank-Dos-Don't.html" id="none">Dos and Don’ts</a></li>
+                        <li><a class="dropdown-item" href="Tank-FAQ.html" id="none">FAQ</a></li>
+                    </ul>
+                  </li>                   
+                  <li class="dropdown-item dropdown-submenu p-0">
+                    <a class="dropdown-item dropdown-toggle lh-base" id="none" href="#">Strom Water Drains <br>& Sewer Systems</a>
+                    <ul class="dropdown-menu p-0">
+                        <li><a class="dropdown-item" id="none" href="U-Drain.html">U Drain</a></li>
+                        <li><a class="dropdown-item" id="none" href="Manhole-Chamber.html">Manhole Chamber</a></li>
+                    </ul>
+                  </li>                   
+                 <li class="dropdown-item dropdown-submenu p-0">
+                        <a class="dropdown-item dropdown-toggle" id="none" href="#">Telecom Electrical Sectors</a>
+                        <ul class="dropdown-menu p-0">
+                            <li><a class="dropdown-item" href="Cable-Trenches.html" id="none">Cable Trenches</a></li>
+                            <li><a class="dropdown-item" href="Telecommunications-Chambers.html" id="none">Telecommunications Chambers</a></li>
+                        </ul>
+                    </li>
+                 <li class="dropdown-item dropdown-submenu p-0">
+                        <a class="dropdown-item dropdown-toggle" id="none" href="#">Boundary Wall <br> & Soil Retaining Wall</a>
+                        <ul class="dropdown-menu p-0">
+                            <li><a class="dropdown-item" href="Compound.html" id="none">Compound Wall & Retaining Wall</a></li>
+                            <li><a class="dropdown-item" href="Retaining.html" id="none">Retaining Wall Using Hollow <br> Core Slabs</a></li>
+                        </ul>
+                    </li>
+                 <li class="dropdown-item dropdown-submenu p-0">
+                        <a class="dropdown-item dropdown-toggle" id="none" href="#">Architectural Products</a>
+                        <ul class="dropdown-menu p-0">
+                            <li><a class="dropdown-item" href="Precast-Concrete-Tiles.html" id="none">Precast Concrete Tiles</a></li>
+                            <li><a class="dropdown-item" href="concete-facades.html" id="none">Concrete Facades</a></li>
+                            <li><a class="dropdown-item" href="concrete-planters.html" id="none">Planters</a></li>
+                        </ul>
+                    </li>
+                 <li class="dropdown-item dropdown-submenu p-0">
+                        <a class="dropdown-item dropdown-toggle" id="none" href="Foundation.html">Foundation</a>
+                        <ul class="dropdown-menu p-0">
+                            <li><a class="dropdown-item" href="Foundation.html" id="none">Footing</a></li>
+                            <li><a class="dropdown-item" href="Foundation.html" id="none">Pedestals</a></li>
+                            <li><a class="dropdown-item" href="Foundation.html" id="none">Tie Beams</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Downloads.html">Downloads</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            </div>
+        </div>
+      </nav>
+    <!-- /my navbar -->
+
+
+      <!-- body -->
+      <div class="" style="margin-top: 130px;">
+        <div class="">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="">
+                        <h1 class="heading">INDUSTRIAL BUILDING SYSTEM (IBS) USING PRECAST CONCRETE ELEMENTS</h1>
+                        </div>
+                        <div class="py-5">
+                            <h2>OVERVIEW</h2>
+                        </div>
+                        <div class="">
+                            <p>
+                                <strong>VME’s IBS has been developed especially for the industrial warehouses and logistics parks</strong>
+                                <strong>Considering the various challenges that are faced in the site. Some of the key factors are</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center py-5">
+                    <div class="col-lg-3">
+                        <div class="">
+                            <div class="py-4">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <span>
+                                        Shortage of skilled manpower
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="">
+                            <div class="py-4">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <span>
+                                        Shortage of skilled manpower
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="">
+                            <div class="py-4">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <span>
+                                        Shortage of skilled manpower
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="">
+                            <div class="py-4">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="">
+                                <h5>
+                                    <span>
+                                        Shortage of skilled manpower
+                                    </span>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 text-center">
+                        <div class=" py-5">
+                            <h2>MAIN BUILDING</h2>
+                            <div class="d-flex justify-content-center">
+                            <div class="rounded-pill" style="height: 2px; width: 220px;background-color: #ff5e14;"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="img">
+                                <img src="https://vmeprecast.co.in/wp-content/uploads/2023/02/Screenshot-2024-01-30-224232.png" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>1.Foundation</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2023/02/foundation.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2023/02/foundation.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2023/02/foundation.png" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" py-5" style="background-color: #f5f5f5;">
+                <div class="container py-5">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="">
+                                <h2>Advantage of Precast pad Footing</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-5">
+                    <div class="row g-5 text-center">
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>2. Precast Retaining Wall Cum Tie beam</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Project-NDR-APOLLO@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Project-NDR-APOLLO@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Project-NDR-APOLLO@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>3. Precast Sleek Wall</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Precast-Sleek-Wall@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Precast-Sleek-Wall@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Precast-Sleek-Wall@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" py-5" style="background-color: #f5f5f5;">
+                <div class="container py-5">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="">
+                                <h2>Advantage of Precast pad Footing</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-5">
+                    <div class="row g-5 text-center">
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>Precast Hollow Core wall as an option for industrial cladding</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/precast-Hollow-core-wall@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/precast-Hollow-core-wall@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/precast-Hollow-core-wall@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>II Main Building - Superstructure</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Total-Building-2-@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Total-Building-2-@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Total-Building-2-@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>1. Precast Column</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Project-eave-ccolumn@2x-100.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Project-eave-ccolumn@2x-100.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Project-eave-ccolumn@2x-100.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" py-5" style="background-color: #f5f5f5;">
+                <div class="container py-5">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="">
+                                <h2>Advantage of Precast pad Footing</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-5">
+                    <div class="row g-5 text-center">
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>2.Precast Rafter</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Precast-Rafter@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Precast-Rafter@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Precast-Rafter@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>3. Precast Purlin</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/03-precast-purlin@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/03-precast-purlin@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/03-precast-purlin@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <div class=" py-5">
+                            <h2>Precast Gutter Beam & Precast Beams</h2>
+                        </div>
+                        <div class="">
+                            <div id="carouselExample" class="carousel slide">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/tie-beams@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/tie-beams@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/tie-beams@2x.webp" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                  <span class="carousel-control-prev-icon" aria-hidden="false"><i class="fa-solid fa-angle-left text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                  <span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-angle-right text-dark fs-1"></i></span>
+                                  <span class="visually-hidden">Next</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" py-5" style="background-color: #f5f5f5;">
+                <div class="container py-5">
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <div class="">
+                                <h2>Advantage of Precast pad Footing</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-5">
+                    <div class="row g-5 text-center">
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <p class="m-0">No Cast in Place work at site.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-12 text-center">
+                        <div class=" py-5">
+                            <h2>Mezzanine Area</h2>
+                            <div class="d-flex justify-content-center">
+                            <div class="rounded-pill" style="height: 2px; width: 220px;background-color: #ff5e14;"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="img">
+                                <img src="https://vmeprecast.co.in/wp-content/uploads/2024/01/Mezzanine-Aear@2x-1024x576.webp" alt="" width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class=" py-5">
+                            <h2>Our Clients</h2>
+                        </div>
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="ndr.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="ndr.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="ndr.png" alt="" width="100%">
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="ndr.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="ndr.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <img src="ndr.png" alt="" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pb-5">
+                <p style="font-size:27px;text-align: center;color: rgba(0,22,89,255);margin-top: 50px;">PROJECTS COMPLETED</p>
+                <div class="container">
+                  <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 ">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/a1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/an1.png" width="100%">
+                              </div>
+                          </div>
+                      </div>           
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/ap1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div>  
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/b1-pjrrdrsa3jj85u15on7n15195n889x1y3jhica630w.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div>  
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/c1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div>  
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/cn2-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div>  
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/Commercial-Building-Shanthi-Colony-Anna-Nagar-VME-Chennai.-pmrvsa026m5nfggpb3ix0pcl8xilcpkidcnvdv79hs.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/d1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/e1-px5v8tih7kr7bv4h05ogrqxqjf3o3slrb3mqhalln4.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/el2.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/i3-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/il1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/in1-1-pjrrirbgcwczrcsdkatdrdqam8nc43uog83904rw0g.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/k1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/l1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/n1-pmrvu8hyf6u5m7mavfzxppk5stv4e0cdn1ladmaqj4.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/p7-pfbnnrpefrvy9enax7y40j10wur65m8xnkzdeblec0.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/si2-pfbnntl2tfyiwmkkm8rd5ijy3mhwl0gebuaccvilzk.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/t2-pfbnntl2tfyiwmkkm8rd5ijy3mhwl0gebuaccvilzk.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/tg1-pmrvyymqs7b1zmr69zjer0mlbkkk383smfo68pah8w.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/v5-pfbnnvgr7413juhub9kmai2vae8n0env03lbbfftn4.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/vme-tvs-motor-hosur-qiwvj1j0ppn26b4xx4l6fhy0qgep42t1cyujyqtaz4.png" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/vme1-pfbnnvgr7413juhub9kmai2vae8n0env03lbbfftn4.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/w2-pfbnnvgr7413juhub9kmai2vae8n0env03lbbfftn4.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/a1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/a1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                      <div class="col-lg-4 col-md-6 col-sm-12">
+                          <div class="card" style="border: none;margin-top: 20px;">
+                              <div class="card-body" style="padding: 0px;">
+                                  <img src="New folder/a1-pfbnnptq23tdm6q1874uvji3q30fq81gzboefro6og.jpg" width="100%">
+                              </div>
+                          </div>
+                      </div> 
+                  </div>
+                </div>
+              </div>
+             </div>
+        </div>
+      </div>
+      <!-- /body -->
+
+
+ <!-- footer -->
+ <div class="py-5" style="background-image: linear-gradient(180deg, #091441 0%, #2e396f 100%);">
+    <div class="">
+      <div class="">
+        <div class="container py-5" style="width: 61%;">
+          <div class="row g-5 w-100">
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="">
+                <img src="https://vmeprecast.co.in/wp-content/uploads/2022/10/VME-Precast-Product-Logo-300x180.jpg" alt="" width="80%">
+              </div>
+              <div class="py-3">
+                <ul class="p-0 text-white">
+                  <li>INDIAS FIRST FULLY <br> AUTOMATED PRECAST <br> FACTORY</li>
+                  <li>
+                    <ul class="wrapper text-dark pt-5">
+                      <li class="icon facebook">
+                        <span class="tooltip">Facebook</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="currentColor"
+                          height="1.2em"
+                          viewBox="0 0 320 512"
+                        >
+                          <path
+                            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="icon twitter">
+                        <span class="tooltip">Twitter</span>
+                        <svg
+                          class="twitter"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 48 48"
+                          fill="currentColor"
+                          height="1.8em"
+                        >
+                          <path
+                            d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+                          ></path>
+                        </svg>
+                      </li>
+                      <li class="icon instagram">
+                        <span class="tooltip">Instagram</span>
+                        <svg
+                          viewBox="0 0 16 16"
+                          class="bi bi-instagram"
+                          fill="currentColor"
+                          height="1.2em"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+                          ></path>
+                        </svg>
+                      </li>
+                    </ul> 
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="">
+                <h2 class="text-white fw-bolder">Quick Link</h2>
+              <ul class="p-0 text-white">
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">About Us</span></li></a>
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Elements</span></li></a>
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Building Solutions</span></li></a>
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Precast Products</span></li></a>
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Careers</span></li></a>
+              </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="">
+                <h2 class="text-white fw-bolder">Projects</h2>
+              <ul class="p-0 text-white">
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Commercial Project</span></li></a>
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Industial Buildings</span></li></a>
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Modular Solution</span></li></a>
+                <a href="#"><li><span style="font-size: 17px;" class="fw-normal text-white">Residential</span></li></a>
+              </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+              <div class="">
+                <h2 class="text-white fw-bolder">Get In Touch</h2>
+                <ul class="p-0 text-white">
+                  <div class="d-flex align-items-center">
+                  <i class="fa-solid fa-location-dot fs-5" style="color: #ff7a00;"></i>
+                  <li class="ps-3">124, Eraiyur Road, Vallam (A) Village, Sriperumbudur, Kanchipuram - 602105</li>
+                </div>
+                  <div class="d-flex align-items-center py-3">
+                  <i class="fa-solid fa-envelope fs-5" style="color: #ff7a00;"></i>
+                  <li class="ps-3">marketing@vmeprecast.co.in</li>
+                </div>
+                  <div class="d-flex align-items-center">
+                  <i class="fa-solid fa-phone fs-5" style="color: #ff7a00;"></i>
+                  <li class="ps-3">+91 91769 13191</li>
+                </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <i style="color: #fff; font-size: larger;">&#169;</i>
+          <span class="text-white">Copyright 2020 powered by VME</span>
+        </div>
+      </div>
+    </div>
+   </div>
+  <!-- /footer -->
+</body>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:false,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:4
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
