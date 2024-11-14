@@ -41,7 +41,7 @@ img{
 }
 a{
 color: white;
-text-decoration: none;
+text-decoration: none !important;
 }
 /* divider */
 .abb h1{
@@ -109,6 +109,12 @@ text-decoration: none;
     margin-left: -1px;
     display: none;
 }
+.dropdown-submenu > .dropdown-menu {
+  line-height: 30px !important;
+}
+.dropdown-submenu{
+  line-height: 30px !important;
+}
 
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
@@ -170,7 +176,8 @@ text-decoration: none;
     color: #001659 !important;
 }
 .button{
-    background-color: #ff5e14 !important;
+    /* background-color: #ff5e14 !important; */
+    background-color: #000 !important;
     color: #fff !important;
 }
 .ccard{
@@ -186,8 +193,8 @@ text-decoration: none;
 }
 .buttoon {
   position: relative;
-  padding: 12px 10px;
-  font-size: 16px;
+  padding: 10px 10px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ff5e14;
@@ -431,7 +438,7 @@ text-decoration: none;
     animation: ad 2s ease-in-out infinite alternate;
     border: 1px solid #ff5e14;
     border-radius: 8px;
-    transition: 1.5s;
+    transition: .5s;
 
 }
 @keyframes ad{
@@ -521,7 +528,7 @@ text-decoration: none;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     border-bottom: 3px solid rgb(255, 105, 0) !important;
-    transition: 0.4s !important;
+    transition: 2s !important;
   }
   .Z1{
     color: rgb(174, 174, 174) !important;
@@ -573,7 +580,7 @@ text-decoration: none;
 .aaz:hover {
     border: 1px solid #ff5e14;
     border-radius: 8px;
-    transition: 1.5s;
+    transition: .1s !important;
 }
 .aaaz:hover .as{
     font-size: 35px;
@@ -644,176 +651,136 @@ transition-duration: 1s;
 /* /relationships */
 
 
+/* footer */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* demo */
 .wrapper {
-    display: inline-flex;  
-  }
-  
-  .wrapper .icon {
-    position: relative;
-    background: #fff;
-    z-index: 0;
-    border-radius: 50%;
-    margin: 10px;
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  
-  .wrapper .icon::after {
-    content: "";
-    position: absolute;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    background-color: transparent;
-    z-index: -1;
-    border-radius: 50%;
+  display: inline-flex;  
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  z-index: 0;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: -1;
+  border-radius: 50%;
+  top: 100%;
+}
+.wrapper .icon:hover:after {
+  animation: bg-pos 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1 both;
+  animation-timing-function: ease-in-out;
+}
+
+.wrapper .icon:hover {
+  color: #fff;
+  overflow: unset;
+  transition: color 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation: overflow-toggle 0.7s;
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.wrapper .facebook::after {
+  background-color: #1877f2;
+}
+.wrapper .twitter::after {
+  background-color: #1da1f2;
+}
+.wrapper .instagram::after {
+  /* background-color: #e4405f; */
+  /* background: linear-gradient(145deg,#405DE6,#5B51D8,#833AB4,#C13584,#E1306C,#FD1D1D,#F56040,#777737,#FCAF45,#FFDC80); */
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+
+@keyframes bg-pos {
+  0% {
     top: 100%;
   }
-  .wrapper .icon:hover:after {
-    animation: bg-pos 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1 both;
-    animation-timing-function: ease-in-out;
-  }
-  
-  .wrapper .icon:hover {
-    color: #fff;
-    overflow: unset;
-    transition: color 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    animation: overflow-toggle 0.7s;
-  }
-  
-  .wrapper .tooltip {
-    position: absolute;
+  100% {
     top: 0;
-    font-size: 14px;
-    background: #fff;
-    color: #fff;
-    padding: 5px 8px;
-    border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-  
-  .wrapper .tooltip::before {
-    position: absolute;
-    content: "";
-    height: 8px;
-    width: 8px;
-    background: #fff;
-    bottom: -3px;
-    left: 50%;
-    transform: translate(-50%) rotate(45deg);
-    transition: all 0.3s 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes overflow-toggle {
+  0% {
+    overflow: hidden;
   }
-  
-  .wrapper .icon:hover .tooltip {
-    top: -45px;
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+  100% {
+    overflow: visible;
   }
-  
-  .wrapper .icon:hover span,
-  .wrapper .icon:hover .tooltip {
-    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-  }
-  .wrapper .facebook::after {
-    background-color: #1877f2;
-  }
-  .wrapper .twitter::after {
-    background-color: #1da1f2;
-  }
-  .wrapper .instagram::after {
-    background-color: #e4405f;
-  }
-  
-  .wrapper .facebook:hover .tooltip,
-  .wrapper .facebook:hover .tooltip::before {
-    background: #1877f2;
-    color: #fff;
-  }
-  
-  .wrapper .twitter:hover .tooltip,
-  .wrapper .twitter:hover .tooltip::before {
-    background: #1da1f2;
-    color: #fff;
-  }
-  
-  .wrapper .instagram:hover .tooltip,
-  .wrapper .instagram:hover .tooltip::before {
-    background: #e4405f;
-    color: #fff;
-  }
-  
-  @keyframes bg-pos {
-    0% {
-      top: 100%;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  
-  @keyframes overflow-toggle {
-    0% {
-      overflow: hidden;
-    }
-    100% {
-      overflow: visible;
-    }
-  }
-  
-/* demo */
+}
+/* /footer */
